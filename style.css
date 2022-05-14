@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+.logo {
+    width: 8%;
+    padding-left: 10px;
+}
+
+.header {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding-right: 15px;
+}
+
+.nav-link:hover {
+    color: rgb(157, 114, 255);
+}
