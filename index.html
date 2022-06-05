@@ -5,43 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrega 2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Quicksand&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/10647e5142.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <img src="img/logo-nav.png" alt="logo" class="logo">
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Inicio</a></li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Videojuegos</a></li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contacto</a></li>
+    <!--NAVBAR-->
+    <header>
+        <nav id="inicio">
+            <ul class="menu">
+                <!--Logo-->
+                <li>
+                    <a href="#inicio">
+                        <img src="assets/img/logo-nav.png" alt="logo" class="logo">
+                    </a>
+                </li>
+                <!--Links del navbar-->
+                <div class="container-items">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tienda" class="nav-link">Videojuegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </div>
+                <!--Botón menú-->
+                <div class="btn-menu">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
             </ul>
         </nav>
     </header>
-    <section class="section">
-        <div class="container">
-            <div class="text-page">
-                <div class="titulo-section">GAME OVER</div>
-                <p class="text-description"> Tienda online de videojuegos</p>
-                <p class="types">PS3 | PS4 | PS5 | PC</p>
-                <p class="btns">
-                    <button type="submit" class="btn1">TIENDA</button>
-                    <button type="submit" class="btn2">INFO</button>
-                </p>
+    <main>
+        <!--SECTION 1 ABOUT-->
+        <section class="about-section">
+            <div class="about-content">
+                <span>GAME OVER</span>
+                <p>Tienda de videojuegos</p>
+                <!--Botones-->
+                <div class="btns">
+                    <a href="#" class="btn-hero">Tienda</a>
+                    <a href="#info" class="btn-hero">Info</a>
+                </div>
             </div>
-            <img src="img/ilustracion.svg" alt="ilustracion" class="img-section">
-        </div>
-    </section>
-    <section class="about-page">
-        <div class="text-about">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </section>
+            <div class="about-img">
+                <img src="assets/img/ilustracion.svg" alt="ilustración">
+            </div>
+        </section>
+        <!--SECTION 2 DESCRIPTION-->
+        <section class="section-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis amet voluptate ipsum vero ipsam dolor ipsa totam pariatur tenetur quaerat, aperiam voluptatibus porro et dolore rerum debitis veritatis laboriosam quae?
+            Quidem reprehenderit harum molestias ut placeat autem omnis temporibus quae similique animi dolorum, unde, vel saepe quasi nisi aliquam quia. Aspernatur excepturi aperiam minus veritatis. Eos et dignissimos nulla ipsam.</p>
+        </section>
+        <!--SECTION 3-->
+        <section class="section3-container" id="info">
+            <h2>Our Advantages</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <!--Contenedor para las cards-->
+            <div class="card-container">
+                <!--Card 1-->
+                <div class="card">
+                    <img src="assets/img/benefit1.png" alt="info 1" class="info-card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <!--Card 2-->
+                <div class="card">
+                    <img src="assets/img/benefit2.png" alt="info 2" class="info-card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <!--Card 3-->
+                <div class="card">
+                    <img src="assets/img/benefit3.png" alt="info 3" class="info-card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </section>
+        <!--SECTION 4-->
+        <section class="section4-container">
+            <h2>How We Work?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <!--Contenedor para las cards-->
+            <div class="card-container2">
+                <!--Card 1-->
+                <div class="work">
+                    <img src="assets/img/work-img.png" alt="info 1" class="img-card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <!--Card 2-->
+                <div class="work">
+                    <img src="assets/img/work-img.png" alt="info 2" class="img-card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <!--Card 3-->
+                <div class="work">
+                    <img src="assets/img/work-img.png" alt="info 3" class="img-card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
-</html>
