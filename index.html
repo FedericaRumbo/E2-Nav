@@ -7,43 +7,34 @@
     <title>Entrega 2</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/10647e5142.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--NAVBAR-->
     <header>
-        <nav id="inicio">
-            <ul class="menu">
-                <!--Logo-->
-                <li>
-                    <a href="#inicio">
-                        <img src="assets/img/logo-nav.png" alt="logo" class="logo">
+        <nav class="navbar">
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+            <label for="nav-checkbox" class="nav-toggle">
+                <i class="fa-solid fa-bars" id="menu"></i>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </label>
+            <ul class="nav-menu">
+                <li class="logo">
+                    <a href="#">
+                        <img src="assets/img/shining.png" alt="logo">
                     </a>
                 </li>
-                <!--Links del navbar-->
-                <div class="container-items">
-                    <li class="nav-item">
-                        <a href="#inicio" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#tienda" class="nav-link">Videojuegos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contacto" class="nav-link">Contacto</a>
-                    </li>
-                </div>
-                <!--Botón menú-->
-                <div class="btn-menu">
-                    <a href="#"><i class="fa-solid fa-bars"></i></a>
-                </div>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#clients">Clientes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!--SECTION 1 ABOUT-->
-        <section class="about-section">
+        <section class="about-section" id="inicio">
             <div class="about-content">
                 <span>GAME OVER</span>
                 <p>Tienda de videojuegos</p>
@@ -54,13 +45,17 @@
                 </div>
             </div>
             <div class="about-img">
-                <img src="assets/img/ilustracion.svg" alt="ilustración">
+                <img src="assets/img/Wormies - Rainbow.png" alt="ilustración">
             </div>
         </section>
         <!--SECTION 2 DESCRIPTION-->
         <section class="section-description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis amet voluptate ipsum vero ipsam dolor ipsa totam pariatur tenetur quaerat, aperiam voluptatibus porro et dolore rerum debitis veritatis laboriosam quae?
-            Quidem reprehenderit harum molestias ut placeat autem omnis temporibus quae similique animi dolorum, unde, vel saepe quasi nisi aliquam quia. Aspernatur excepturi aperiam minus veritatis. Eos et dignissimos nulla ipsam.</p>
+            <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis amet voluptate ipsum vero ipsam dolor ipsa totam pariatur tenetur quaerat, aperiam voluptatibus porro et dolore rerum debitis veritatis laboriosam quae? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="img-section2">
+            <img src="assets/img/Olá - Playing Video Games.png">
+        </div>
         </section>
         <!--SECTION 3-->
         <section class="section3-container" id="info">
@@ -70,17 +65,17 @@
             <div class="card-container">
                 <!--Card 1-->
                 <div class="card">
-                    <img src="assets/img/benefit1.png" alt="info 1" class="info-card">
+                    <img src="assets/img/Pebble People - Light Bulb.png" alt="info 1" class="info-card">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <!--Card 2-->
                 <div class="card">
-                    <img src="assets/img/benefit2.png" alt="info 2" class="info-card">
+                    <img src="assets/img/Hands - Social.png" alt="info 2" class="info-card">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <!--Card 3-->
                 <div class="card">
-                    <img src="assets/img/benefit3.png" alt="info 3" class="info-card">
+                    <img src="assets/img/Hands - Cart.png" alt="info 3" class="info-card">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
@@ -93,20 +88,86 @@
             <div class="card-container2">
                 <!--Card 1-->
                 <div class="work">
-                    <img src="assets/img/work-img.png" alt="info 1" class="img-card">
+                    <img src="assets/img/Hands - Folder.png" alt="info 1" class="img-card">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <!--Card 2-->
                 <div class="work">
-                    <img src="assets/img/work-img.png" alt="info 2" class="img-card">
+                    <img src="assets/img/Hands - Folder.png" alt="info 2" class="img-card">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <!--Card 3-->
                 <div class="work">
-                    <img src="assets/img/work-img.png" alt="info 3" class="img-card">
+                    <img src="assets/img/Hands - Folder.png" alt="info 3" class="img-card">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </section>
+        <!--SECTION 5-->
+        <section class="section5-container" id="clients">
+            <h2>Our Clients</h2>
+            <p>A list of companies that have worked with us.</p>
+            <span class="clickme">Click me ⬇</span>
+            <span class="hoverme">Hover me ⬇</span>
+            <div class="flex-clients">
+                <!--Card 1-->
+                <div class="container-clients">
+                    <img src="assets/img/Women Power - Mobile.png" alt="Avatar" class="image-card">
+                    <div class="overlay">
+                        <div class="text-clients">Company 1</div>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div class="container-clients">
+                    <img src="assets/img/Women Power - Mobile.png" alt="Avatar" class="image-card">
+                    <div class="overlay">
+                        <div class="text-clients">Company 2</div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="container-clients">
+                    <img src="assets/img/Women Power - Mobile.png" alt="Avatar" class="image-card">
+                    <div class="overlay">
+                        <div class="text-clients">Company 3</div>
+                    </div>
+                </div>
+                <!--Card 4-->
+                <div class="container-clients">
+                    <img src="assets/img/Women Power - Mobile.png" alt="Avatar" class="image-card">
+                    <div class="overlay">
+                        <div class="text-clients">Company 4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER-->
+        <footer>
+            <div class="footer-container" id="contacto">
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-1">
+                        <h4>Jupiter, Australia</h4>
+                        <p> <i class="fa-solid fa-location-dot"></i>Calle falsa 123</p>
+                        <p><i class="fa-solid fa-envelope"></i>mail@mail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>011 121212121</p>
+                    </div>
+                    <div class="contact-2">
+                        <h4>Esteban Echeverría</h4>
+                        <p><i class="fa-solid fa-location-dot"></i>Calle falsa 123</p>
+                        <p><i class="fa-solid fa-envelope"></i>mail@mail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>011 121212121</p>
+                    </div>
+                </div>
+                <span class="linea"></span>
+                <div class="social-media">
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
+</html>
