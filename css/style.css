@@ -210,8 +210,13 @@ li {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
+}
+
+#social-media img {
+    width: 35%;
+    margin-bottom: 2rem;
 }
 
 /** SECTION 4 **/
@@ -561,6 +566,7 @@ li {
     .card {
         padding: 0 2rem;
     }
+
 
     /** SECTION 4 **/
 
